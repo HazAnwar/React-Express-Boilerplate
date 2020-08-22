@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "src/server"
+    ],
+    "exec": "node ./src/server/index.js",
+    "env": {
+        "ENV_VARIABLE": "VALUE"
+    }
+}

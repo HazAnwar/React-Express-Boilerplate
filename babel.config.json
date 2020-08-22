@@ -1,0 +1,6 @@
+{
+    "include": [
+      "src"
+    ],
+    "presets": ["@babel/preset-react"]
+  }
