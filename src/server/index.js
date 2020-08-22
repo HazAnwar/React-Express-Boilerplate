@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 const PUBLIC_URL = process.env.PUBLIC_URL || '';
 const PORT = process.env.PORT || '3000';
 
-const app = express();
+export const app = express();
 
 app.use(express.json());
 app.use(cors());
@@ -40,7 +40,3 @@ app.listen(PORT, () => {
     )}`
   );
 });
-
-// module.exports = app;
-
-export default app;
