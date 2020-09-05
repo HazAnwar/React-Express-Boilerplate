@@ -19,15 +19,13 @@ app.use(
   })
 );
 
-app.use(
-  PUBLIC_URL,
-  express.static(path.resolve(__dirname, './public'), {
-    maxAge: '30 days'
-  })
-);
+app.get('/api/test', (_, res) => {
+  console.log('request received at the API/test endpoint');
+  res.send('this is great woooop :D');
+});
 
 app.get('*', (_, res) => {
-  res.sendFile(path.resolve(__dirname, './public/index.html'));
+  res.sendFile(path.resolve(__dirname, './dist/index.html'));
 });
 
 app.listen(PORT, () => {

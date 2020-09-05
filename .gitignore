@@ -1,5 +1,8 @@
 # dependencies
 /node_modules
 
+# yarn
+yarn-error.log
+
 # production
 /dist
